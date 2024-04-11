@@ -1,3 +1,4 @@
+
 [from-internal]
 exten => 16,1,Answer()
   same =>   n,Echo()
@@ -56,3 +57,4 @@ exten => _X.,1,Verbose(2,"AMI Call to Ext: ${EXTEN}")
   same => n,Dial(PJSIP/${EXTEN})
   same => n,Hangup()
 ;exten => _421X,1,Dial(PJSIP/${EXTEN}@u42)
+
